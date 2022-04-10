@@ -1,9 +1,12 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:recipe_demo/model/recipe.dart';
 
-class RecipeItem extends StatelessWidget {
-  const RecipeItem({Key? key}) : super(key: key);
-  
+class FeaturedItem extends StatelessWidget {
+  final Recipe recipe;
+  final String tag;
+  const FeaturedItem({required this.recipe, Key? key, required this.tag})
+      : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     Color bgColor = Theme.of(context).primaryColor;
@@ -34,9 +37,12 @@ class RecipeItem extends StatelessWidget {
               Expanded(
                 child: Padding(
                   padding: const EdgeInsets.only(bottom: 15),
-                  child: Image.asset(
-                    "assets/image/scramble_eggs.png",
-                    fit: BoxFit.fitHeight,
+                  child: Hero(
+                    tag: tag,
+                    child: Image.asset(
+                      recipe.imgs.first,
+                      fit: BoxFit.fitHeight,
+                    ),
                   ),
                 ),
               ),
@@ -53,10 +59,14 @@ class RecipeItem extends StatelessWidget {
               //   ),
               // ),
               Row(
-                children: const [
+                children: [
                   Expanded(
-                    child: Text("Scrambled Egges",
-                      style: TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold),
+                    child: Text(
+                      recipe.name,
+                      style: const TextStyle(
+                          fontSize: 18,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold),
                     ),
                   ),
                 ],

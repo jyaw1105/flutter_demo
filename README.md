@@ -17,3 +17,6 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Common weight name mapping
 https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#common_weight_name_mapping
+
+## rebuild json serializable files
+flutter pub run build_runner build

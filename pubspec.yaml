@@ -35,8 +35,14 @@ dependencies:
   simple_animations:
   carousel_slider:
   vector_math: ^2.0.8
-
+  sqflite:
+  path_provider:
+  json_annotation:
+  expand_widget:
+  
 dev_dependencies:
+  build_runner:
+  json_serializable:
   flutter_test:
     sdk: flutter
 
@@ -65,6 +71,7 @@ flutter:
     - assets/image/
     - assets/font/
     - assets/avatar/
+    - assets/data/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

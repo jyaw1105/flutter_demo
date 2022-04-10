@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:recipe_demo/home_page.dart';
+import 'package:recipe_demo/home/home_page.dart';
 import 'package:simple_animations/simple_animations.dart';
 
 class SplashScreen extends StatelessWidget {

@@ -1,35 +1,76 @@
-{
-    "name": "Scrambled Eggs",
-    "imgs": [
-        "assets/image/scramble_eggs.png"
-    ],
-    "desc": "Your microwave is the key to irresistibly fluffy scrambled eggs that are ready in mere minutes. Don't believe us? Just try this top-rated recipe for microwave eggs.\n<h4><b>Can You Microwave Eggs?</b></h4>Of course! We wouldn't be here if you couldn't. This microwave method is hands-off (compared to the traditional stovetop method) and comes together in just a few minutes with three ingredients. What more could you ask for in a shortcut recipe? How to Cook Eggs In the Microwave\nThere are plenty of ways to cook eggs in the microwave, but this method for scrambled eggs is perhaps our favorite. You'll find the full recipe below, but here's a brief overview of what you can expect:\nCrack the eggs into a microwave-safe bowl or mug, then mix well with milk and salt. Heat the eggs in the microwave for about 30 seconds, remove and beat well, then return to the microwave for another 30 seconds. Repeat until eggs are fully cooked and scrambled.",
-    "cooking_time": "5",
-    "cooking_time_unit": "mins",
-    "serving_size": "2",
-    "created_by": 1,
-    "created_date": "2022-04-01 00:00:00",
-    "featured": true,
-    "category": [
-        "Breakfast",
-        "Egg"
-    ],
-    "utils": [
-        "Microwave"
-    ],
-    "ingredients": [
-        "4 Eggs",
-        "1/4 cup Milk",
-        "1/8 teaspoon salt"
-    ],
-    "steps": [
-        "Break the eggs into a microwave-proof mixing bowl. Add milk and salt; mix well.",
-        "Pop the bowl into the microwave and cook on high power for 30 seconds. Remove bowl, beat eggs very well, scraping down the sides of the bowl, and return to the microwave for another 30 seconds. Repeat this pattern, stirring every 30 seconds for up to 2 1/2 minutes. Stop when eggs have the consistency you desire."
-    ],
-    "tips": [
-        {
-            "title": "What to Serve With Scrambled Eggs",
-            "desc": "For a classic breakfast, try pairing these microwave scrambled eggs with Basic Biscuits and Oven-Baked Bacon. You could also make a satisfying Scrambled Egg Sandwich or Breakfast Burrito. With this recipe, it's easy to keep it basic or get as creative as you want. The world is your oyster!"
-        }
-    ]
-}
+[
+    {
+        "id": 1,
+        "name": "Scrambled Eggs",
+        "imgs": [
+            "assets/image/scramble_eggs.png"
+        ],
+        "desc": "Your microwave is the key to irresistibly fluffy scrambled eggs that are ready in mere minutes. Don't believe us? Just try this top-rated recipe for microwave eggs.\n<h4><b>Can You Microwave Eggs?</b></h4>Of course! We wouldn't be here if you couldn't. This microwave method is hands-off (compared to the traditional stovetop method) and comes together in just a few minutes with three ingredients. What more could you ask for in a shortcut recipe? How to Cook Eggs In the Microwave\nThere are plenty of ways to cook eggs in the microwave, but this method for scrambled eggs is perhaps our favorite. You'll find the full recipe below, but here's a brief overview of what you can expect:\nCrack the eggs into a microwave-safe bowl or mug, then mix well with milk and salt. Heat the eggs in the microwave for about 30 seconds, remove and beat well, then return to the microwave for another 30 seconds. Repeat until eggs are fully cooked and scrambled.",
+        "cooking_time": "5",
+        "cooking_time_unit": "mins",
+        "serving_min_size": 2,
+        "serving_max_size": null,
+        "created_by": 1,
+        "created_date": "2022-04-01 00:00:00",
+        "featured": true,
+        "category": [
+            "Breakfast",
+            "Egg"
+        ],
+        "utils": [
+            "Microwave"
+        ],
+        "ingredients": [
+            "4 Eggs",
+            "1/4 cup Milk",
+            "1/8 teaspoon salt"
+        ],
+        "steps": [
+            "Break the eggs into a microwave-proof mixing bowl. Add milk and salt; mix well.",
+            "Pop the bowl into the microwave and cook on high power for 30 seconds. Remove bowl, beat eggs very well, scraping down the sides of the bowl, and return to the microwave for another 30 seconds. Repeat this pattern, stirring every 30 seconds for up to 2 1/2 minutes. Stop when eggs have the consistency you desire."
+        ],
+        "tips": [
+            {
+                "title": "What to Serve With Scrambled Eggs",
+                "desc": "For a classic breakfast, try pairing these microwave scrambled eggs with Basic Biscuits and Oven-Baked Bacon. You could also make a satisfying Scrambled Egg Sandwich or Breakfast Burrito. With this recipe, it's easy to keep it basic or get as creative as you want. The world is your oyster!"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Scrambled Eggs",
+        "imgs": [
+            "assets/image/scramble_eggs.png"
+        ],
+        "desc": "Your microwave is the key to irresistibly fluffy scrambled eggs that are ready in mere minutes. Don't believe us? Just try this top-rated recipe for microwave eggs.\n<h4><b>Can You Microwave Eggs?</b></h4>Of course! We wouldn't be here if you couldn't. This microwave method is hands-off (compared to the traditional stovetop method) and comes together in just a few minutes with three ingredients. What more could you ask for in a shortcut recipe? How to Cook Eggs In the Microwave\nThere are plenty of ways to cook eggs in the microwave, but this method for scrambled eggs is perhaps our favorite. You'll find the full recipe below, but here's a brief overview of what you can expect:\nCrack the eggs into a microwave-safe bowl or mug, then mix well with milk and salt. Heat the eggs in the microwave for about 30 seconds, remove and beat well, then return to the microwave for another 30 seconds. Repeat until eggs are fully cooked and scrambled.",
+        "cooking_time": "5",
+        "cooking_time_unit": "mins",
+        "serving_min_size": 2,
+        "serving_max_size": null,
+        "created_by": 1,
+        "created_date": "2022-04-01 00:00:00",
+        "featured": true,
+        "category": [
+            "Breakfast",
+            "Egg"
+        ],
+        "utils": [
+            "Microwave"
+        ],
+        "ingredients": [
+            "4 Eggs",
+            "1/4 cup Milk",
+            "1/8 teaspoon salt"
+        ],
+        "steps": [
+            "Break the eggs into a microwave-proof mixing bowl. Add milk and salt; mix well.",
+            "Pop the bowl into the microwave and cook on high power for 30 seconds. Remove bowl, beat eggs very well, scraping down the sides of the bowl, and return to the microwave for another 30 seconds. Repeat this pattern, stirring every 30 seconds for up to 2 1/2 minutes. Stop when eggs have the consistency you desire."
+        ],
+        "tips": [
+            {
+                "title": "What to Serve With Scrambled Eggs",
+                "desc": "For a classic breakfast, try pairing these microwave scrambled eggs with Basic Biscuits and Oven-Baked Bacon. You could also make a satisfying Scrambled Egg Sandwich or Breakfast Burrito. With this recipe, it's easy to keep it basic or get as creative as you want. The world is your oyster!"
+            }
+        ]
+    }
+]
