@@ -9,42 +9,48 @@ class FeaturedItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Color bgColor = Theme.of(context).primaryColor;
+    Color bgColor = Colors.black12;
     return Container(
       width: MediaQuery.of(context).size.width * 0.8,
       margin: const EdgeInsets.only(top: 5, bottom: 5),
       child: DecoratedBox(
         decoration: BoxDecoration(
-          color: bgColor.withOpacity(0.6),
+          color: Colors.white,
           borderRadius: BorderRadius.circular(10),
           boxShadow: [
             BoxShadow(
-                color: bgColor.withOpacity(0.3),
+                color: bgColor.withOpacity(0.1),
                 blurRadius: 2,
                 spreadRadius: 2,
                 offset: const Offset(0, 1)),
             BoxShadow(
-                color: bgColor.withOpacity(0.3),
+                color: bgColor.withOpacity(0.1),
                 blurRadius: 1,
                 spreadRadius: 1,
                 offset: const Offset(0, -.5))
           ],
         ),
-        child: Container(
-          padding: const EdgeInsets.fromLTRB(10, 20, 10, 20),
-          child: Column(
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(10),
+          child: Stack(
+            alignment: Alignment.bottomLeft,
             children: [
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.only(bottom: 15),
-                  child: Hero(
-                    tag: tag,
-                    child: Image.asset(
-                      recipe.imgs.first,
-                      fit: BoxFit.fitHeight,
-                    ),
-                  ),
-                ),
+              Positioned.fill(child: Hero(
+                tag: tag,
+                child: Image.asset(
+                  recipe.imgs.first,
+                  fit: BoxFit.fill,
+                  alignment: Alignment.center,
+                ))),
+              Positioned.fill(
+                child: Container(
+                  color: Colors.black12,
+                )
+              ),
+              Positioned.fill(
+                child: Container(
+                  color: Colors.white10,
+                )
               ),
               // AnimatedContainer(
               //   // scale: scale,
@@ -58,18 +64,21 @@ class FeaturedItem extends StatelessWidget {
               //     fit: BoxFit.contain,
               //   ),
               // ),
-              Row(
-                children: [
-                  Expanded(
-                    child: Text(
-                      recipe.name,
-                      style: const TextStyle(
-                          fontSize: 18,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold),
+              Padding(
+                padding: const EdgeInsets.only(left: 20, bottom: 20, right: 20),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Text(
+                        recipe.name,
+                        style: const TextStyle(
+                            fontSize: 18,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold),
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               )
             ],
           ),

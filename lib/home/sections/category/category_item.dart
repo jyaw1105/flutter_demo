@@ -11,10 +11,12 @@ class CategoryItem extends StatelessWidget {
   Widget build(BuildContext context) {
     Widget _img = Hero(
       tag: tag,
-      child: Image.asset(
+      child: ClipRRect(
+        borderRadius: const BorderRadius.horizontal(left: Radius.circular(12)),
+        child: Image.asset(
         recipe.imgs.first,
         width: 150,
-      ),
+      )),
     );
 
     const TextStyle titleTextStyle = TextStyle(fontSize: 15);
@@ -36,7 +38,7 @@ class CategoryItem extends StatelessWidget {
           _img,
           Expanded(
             child: Padding(
-              padding: const EdgeInsets.only(top: 25, left: 10),
+              padding: const EdgeInsets.only(top: 25, left: 15),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,

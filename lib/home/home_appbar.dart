@@ -70,7 +70,7 @@ class _HomeAppBarDelegate extends SliverPersistentHeaderDelegate {
                         child: SearchBar(
                             onTap: () => Navigator.of(context).push(
                                 MaterialPageRoute(
-                                    builder: (_) => SearchPage()))),
+                                    builder: (_) => const SearchPage()))),
                       )),
                 )
               ],

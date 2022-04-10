@@ -3,7 +3,8 @@
         "id": 1,
         "name": "Scrambled Eggs",
         "imgs": [
-            "assets/image/scramble_eggs.png"
+            "assets/image/scramble_eggs.png",
+            "assets/image/scrambled_egg_2.png"
         ],
         "desc": "Your microwave is the key to irresistibly fluffy scrambled eggs that are ready in mere minutes. Don't believe us? Just try this top-rated recipe for microwave eggs.\n<h4><b>Can You Microwave Eggs?</b></h4>Of course! We wouldn't be here if you couldn't. This microwave method is hands-off (compared to the traditional stovetop method) and comes together in just a few minutes with three ingredients. What more could you ask for in a shortcut recipe? How to Cook Eggs In the Microwave\nThere are plenty of ways to cook eggs in the microwave, but this method for scrambled eggs is perhaps our favorite. You'll find the full recipe below, but here's a brief overview of what you can expect:\nCrack the eggs into a microwave-safe bowl or mug, then mix well with milk and salt. Heat the eggs in the microwave for about 30 seconds, remove and beat well, then return to the microwave for another 30 seconds. Repeat until eggs are fully cooked and scrambled.",
         "cooking_time": "5",
@@ -38,39 +39,181 @@
     },
     {
         "id": 2,
-        "name": "Scrambled Eggs",
+        "name": "Feta Eggs",
         "imgs": [
-            "assets/image/scramble_eggs.png"
+            "assets/image/feta_egg.jpeg"
         ],
-        "desc": "Your microwave is the key to irresistibly fluffy scrambled eggs that are ready in mere minutes. Don't believe us? Just try this top-rated recipe for microwave eggs.\n<h4><b>Can You Microwave Eggs?</b></h4>Of course! We wouldn't be here if you couldn't. This microwave method is hands-off (compared to the traditional stovetop method) and comes together in just a few minutes with three ingredients. What more could you ask for in a shortcut recipe? How to Cook Eggs In the Microwave\nThere are plenty of ways to cook eggs in the microwave, but this method for scrambled eggs is perhaps our favorite. You'll find the full recipe below, but here's a brief overview of what you can expect:\nCrack the eggs into a microwave-safe bowl or mug, then mix well with milk and salt. Heat the eggs in the microwave for about 30 seconds, remove and beat well, then return to the microwave for another 30 seconds. Repeat until eggs are fully cooked and scrambled.",
-        "cooking_time": "5",
+        "desc": "A very TASTY way to add zip to boring scrambled eggs.",
+        "cooking_time": "15",
         "cooking_time_unit": "mins",
-        "serving_min_size": 2,
+        "serving_min_size": 4,
         "serving_max_size": null,
         "created_by": 1,
         "created_date": "2022-04-01 00:00:00",
         "featured": true,
         "category": [
             "Breakfast",
-            "Egg"
+            "Egg",
+            "Dinner"
         ],
         "utils": [
-            "Microwave"
+            "Pan"
         ],
         "ingredients": [
-            "4 Eggs",
-            "1/4 cup Milk",
-            "1/8 teaspoon salt"
+            "1 tablespoon butter",
+            "¼ cup chopped onion",
+            "4 eggs, beaten",
+            "¼ cup chopped tomatoes",
+            "2 tablespoons crumbled feta cheese",
+            "salt and pepper"
         ],
         "steps": [
-            "Break the eggs into a microwave-proof mixing bowl. Add milk and salt; mix well.",
-            "Pop the bowl into the microwave and cook on high power for 30 seconds. Remove bowl, beat eggs very well, scraping down the sides of the bowl, and return to the microwave for another 30 seconds. Repeat this pattern, stirring every 30 seconds for up to 2 1/2 minutes. Stop when eggs have the consistency you desire."
+            "Melt butter in a skillet over medium heat.",
+            "Saute onions until translucent. Pour in eggs. Cook, stirring occasionally to scramble.",
+            "When eggs appear almost done, stir in chopped tomatoes and feta cheese, and season with salt and pepper.",
+            "Cook until cheese is melted."
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Homemade Spaghetti and Meatballs",
+        "imgs": [
+            "assets/image/spag_meatball.png"
+        ],
+        "desc": "I have been making this spaghetti recipe, from a dear family friend, for over 25 years. It is by far the best homemade sauce and meatballs we have ever had. I've also just fried the beef and added it to the sauce, then used it to make lasagna.",
+        "cooking_time": "3",
+        "cooking_time_unit": "hrs",
+        "serving_min_size": 7,
+        "serving_max_size": 10,
+        "created_by": 1,
+        "created_date": "2022-04-01 00:00:00",
+        "featured": true,
+        "category": [
+            "Dinner",
+            "Spaghetti",
+            "Feast",
+            "Meat"
+        ],
+        "utils": [
+            "Oven",
+            "Pot",
+            "Pan"
+        ],
+        "ingredients": [
+            "1 (29 ounce) can whole peeled tomatoes",
+            "19 fluid ounces tomato juice",
+            "1 (5.5 ounce) can tomato paste",
+            "1 large onion, chopped",
+            "2 tablespoons dried parsley",
+            "1 teaspoon salt",
+            "½ teaspoon crushed red pepper flakes, or to taste",
+            "½ teaspoon ground black pepper",
+            "¼ teaspoon dried thyme",
+            "¼ teaspoon ground cloves",
+            "1 ½ pounds lean ground beef",
+            "16 soda crackers, crushed",
+            "2 eggs, beaten",
+            "3 tablespoons grated Parmesan cheese",
+            "1 large clove garlic, crushed",
+            "1 tablespoon dried parsley",
+            "⅛ teaspoon dried thyme",
+            "1 (16 ounce) package spaghetti"
+        ],
+        "steps": [
+            "Preheat the oven to 350 degrees F (175 degrees C).",
+            "Combine tomatoes, tomato juice, tomato paste, onion, parsley, salt, red pepper flakes, black pepper, thyme, and cloves in a large pot. Bring to a boil over high heat; reduce heat to low and let simmer for 1 to 1 1/2 hours.",
+            "Meanwhile, combine beef, crackers, eggs, Parmesan cheese, garlic, parsley, and thyme in a bowl. Form into large meatballs and place into a broiler pan.",
+            "Bake in the preheated oven until browned and no longer pink in the centers, about 30 minutes.",
+            "Transfer meatballs to sauce and continue to simmer, 2 to 2 1/2 hours more.",
+            "Bring a large pot of lightly salted water to a boil. Cook spaghetti in the boiling water, stirring occasionally, until tender yet firm to the bite, about 12 minutes. Drain.",
+            "Serve sauce and meatballs over cooked spaghetti."
         ],
         "tips": [
             {
-                "title": "What to Serve With Scrambled Eggs",
-                "desc": "For a classic breakfast, try pairing these microwave scrambled eggs with Basic Biscuits and Oven-Baked Bacon. You could also make a satisfying Scrambled Egg Sandwich or Breakfast Burrito. With this recipe, it's easy to keep it basic or get as creative as you want. The world is your oyster!"
+                "title": "Cook's Note",
+                "desc": "You can use 1 teaspoon garlic salt instead of fresh garlic, if preferred."
             }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Springtime Spaghetti",
+        "imgs": [
+            "assets/image/springtime_spaghetti.png",
+            "assets/image/springtime_spaghetti_2.png"
+        ],
+        "desc": "Zucchini and carrots are sauteed in butter, mixed in a creamy sauce, and tossed with spaghetti. This is a great side dish that goes really well with barbeque.",
+        "cooking_time": "40",
+        "cooking_time_unit": "mins",
+        "serving_min_size": 6,
+        "serving_max_size": null,
+        "created_by": 1,
+        "created_date": "2022-04-01 00:00:00",
+        "featured": true,
+        "category": [
+            "Dinner",
+            "Spaghetti",
+            "Feast"
+        ],
+        "utils": [
+            "Oven",
+            "Pot",
+            "Pan"
+        ],
+        "ingredients": [
+            "8 ounces spaghetti",
+            "2 tablespoons butter",
+            "1 large zucchini, julienned",
+            "3 large carrots, julienned",
+            "2 teaspoons minced garlic",
+            "¾ cup heavy cream",
+            "¾ cup grated Parmesan cheese",
+            "1 tablespoon chopped fresh dill"
+        ],
+        "steps": [
+            "Bring a large pot of lightly salted water to a boil, cook spaghetti for 8 to 10 minutes, until al dente, and drain.",
+            "Melt the butter in a skillet over medium heat, and saute the zucchini, carrots, and garlic until tender. Stir in the heavy cream, Parmesan cheese, and dill. Cook and stir until thickened. Mix with the cooked spaghetti to serve."
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Easy Skillet Spaghetti",
+        "imgs": [
+            "assets/image/skillet_spaghetti.png"
+        ],
+        "desc": "This spaghetti is sure to become a family favorite. It is full of flavor, and the leftovers are even better!",
+        "cooking_time": "1.5",
+        "cooking_time_unit": "hrs",
+        "serving_min_size": 4,
+        "serving_max_size": null,
+        "created_by": 1,
+        "created_date": "2022-04-01 00:00:00",
+        "featured": true,
+        "category": [
+            "Dinner",
+            "Spaghetti"
+        ],
+        "utils": [
+            "Pot",
+            "Pan"
+        ],
+        "ingredients": [
+            "1 pound ground beef",
+            "3 cups water",
+            "18 fluid ounces tomato juice",
+            "1 (6 ounce) can tomato paste",
+            "2 tablespoons dried minced onion",
+            "1 ½ teaspoons chili powder, or more to taste",
+            "1 teaspoon white sugar",
+            "1 teaspoon dried oregano, crushed",
+            "1 teaspoon garlic salt",
+            "1 teaspoon salt",
+            "7 ounces spaghetti"
+        ],
+        "steps": [
+            "Heat a large skillet over medium-high heat. Cook and stir beef in the hot skillet until browned and crumbly, 5 to 7 minutes.",
+            "Mix water, tomato juice, tomato paste, minced onion, chili powder, sugar, oregano, garlic salt, and salt into ground beef; cover skillet and bring to a boil. Reduce heat to medium-low and simmer beef mixture, stirring occasionally, until flavors have blended, about 30 minutes.",
+            "Place spaghetti into beef mixture and stir to separate strands; cover skillet and simmer, stirring frequently, until spaghetti is tender, about 30 minutes."
         ]
     }
 ]

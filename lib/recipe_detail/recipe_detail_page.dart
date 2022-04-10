@@ -4,7 +4,6 @@ import 'package:recipe_demo/model/recipe.dart';
 import 'package:recipe_demo/provider/recipe_provider.dart';
 import 'package:recipe_demo/recipe_detail/recipe_detail_appbar.dart';
 import 'package:recipe_demo/recipe_detail/recipe_similar_item.dart';
-import 'package:recipe_demo/widgets/snapping_scroll_physic.dart';
 
 class RecipeDetailPage extends StatelessWidget {
   final Recipe recipe;
@@ -35,6 +34,16 @@ class RecipeDetailPage extends StatelessWidget {
                     const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
                 sliver: SliverList(
                     delegate: SliverChildListDelegate([
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 0, top: 20),
+                    child: Text(
+                      recipe.name,
+                      style: const TextStyle(
+                          fontSize: 22,
+                          color: Colors.black,
+                          fontWeight: FontWeight.w800),
+                    ),
+                  ),
                   _label("Cooking Time"),
                   Text(recipe.cookingTimeString, style: detailTextStyle),
                   _label("Serving Size"),
@@ -87,7 +96,7 @@ class RecipeDetailPage extends StatelessWidget {
                   _label("Ingredients"),
                   ExpandText(
                     recipe.ingredients.join("\n"),
-                    textAlign: TextAlign.justify,
+                    textAlign: TextAlign.left,
                     collapsedHint: collapsedHint,
                     expandedHint: expandedHint,
                     expandArrowStyle: ExpandArrowStyle.text,
@@ -149,22 +158,26 @@ class RecipeDetailPage extends StatelessWidget {
                   FutureBuilder(
                       future: RecipeProvider.getSimilarRecipes(recipe),
                       builder: (_, __) {
-                        if (((__.data ?? []) as List<Recipe>).isNotEmpty) {
-                          List<Recipe> similars = __.data as List<Recipe>;
+                        List<Recipe> similars = [];
+                        if (__.hasData) {
+                          similars = __.data as List<Recipe>;
+                        }
+                        if (similars.isNotEmpty) {
                           return Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               _label("Similars"),
                               IntrinsicHeight(
                                 child: SingleChildScrollView(
+                                  scrollDirection: Axis.horizontal,
                                   padding:
                                       const EdgeInsets.symmetric(vertical: 10),
                                   child: Row(
                                     children: similars.map((e) {
                                       String _tag = 'similar-${recipe.id}';
                                       return InkWell(
-                                        child: SimilarItem(
-                                            recipe: recipe, tag: _tag),
+                                        child:
+                                            SimilarItem(recipe: e, tag: _tag),
                                         onTap: () => Navigator.of(context).push(
                                             MaterialPageRoute(
                                                 builder: (_) =>

@@ -73,7 +73,7 @@ class _RecipeAppBarStateDelegate extends SliverPersistentHeaderDelegate {
             child: Stack(
               children: [
                 Opacity(
-                  opacity: 1 - progress,
+                  opacity: 1 - progress1,
                   child: CarouselSlider(
                       items: imgs
                           .asMap()
@@ -86,7 +86,7 @@ class _RecipeAppBarStateDelegate extends SliverPersistentHeaderDelegate {
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: AssetImage(value),
-                                      fit: BoxFit.contain)),
+                                      fit: BoxFit.cover)),
                             );
                             if (index == 0) {
                               _img = Hero(tag: tag, child: _img);
@@ -96,9 +96,9 @@ class _RecipeAppBarStateDelegate extends SliverPersistentHeaderDelegate {
                           .values
                           .toList(),
                       options: CarouselOptions(
-                        height: maxExtent,
-                        enableInfiniteScroll: false,
-                      )),
+                          height: maxExtent,
+                          enableInfiniteScroll: false,
+                          viewportFraction: 1.0)),
                 ),
                 Positioned(
                     bottom: 10,
@@ -111,14 +111,19 @@ class _RecipeAppBarStateDelegate extends SliverPersistentHeaderDelegate {
                             delay: const Duration(milliseconds: 500),
                             duration: const Duration(milliseconds: 500),
                             // curve: Curves.elasticOut,
-                            builder: (context, child, double value) => Text(
-                                  name,
-                                  style: const TextStyle(
-                                      fontSize: 26,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white),
-                                  maxLines: 1,
-                                  overflow: TextOverflow.ellipsis,
+                            builder: (context, child, double value) => SizedBox(
+                                  width: MediaQuery.of(context).size.width -
+                                      50 -
+                                      titleMargin.left,
+                                  child: Text(
+                                    name,
+                                    style: const TextStyle(
+                                        fontSize: 26,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white),
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                  ),
                                 )))),
                 Positioned(
                     left: 40 - titleMargin.left,

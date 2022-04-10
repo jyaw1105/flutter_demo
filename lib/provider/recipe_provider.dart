@@ -42,9 +42,9 @@ class RecipeProvider {
 
   static Future<List<Recipe>> getSimilarRecipes(Recipe recipe) async {
     List<Recipe> list = await getAllRecipes();
-    list.removeWhere((element) =>
-        !element.category.any((x) => recipe.category.contains(x)) ||
-        element.id == recipe.id);
+    list.retainWhere((element) =>
+        element.category.any((x) => recipe.category.contains(x)) &&
+        element.id != recipe.id);
     list.shuffle();
     return list.take(defaultSimularCount).toList();
   }
